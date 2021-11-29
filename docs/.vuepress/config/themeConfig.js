@@ -47,13 +47,13 @@ module.exports = {
 
   author: {
     // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, link: String}
-    name: '半码', // 必需
+    name: '林不笑', // 必需
     link: 'https://github.com/linbingxing', // 可选的
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
     avatar: 'https://avatars.githubusercontent.com/u/5601844?s=96&v=4',
-    name: '林半码',
+    name: '林不笑',
     slogan: '编程届的痞马',
   },
   social: {
@@ -81,7 +81,7 @@ module.exports = {
     // 页脚信息
     createYear: 2020, // 博客创建年份
     copyrightInfo:
-      '林半码 | <a href="https://gitee.com/linbingxing/vuepress_doc/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
+      '林不笑 | <a href="https://gitee.com/linbingxing/vuepress_doc/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息，支持a标签
   },
   htmlModules // 插入hmtl(广告)模块
 }

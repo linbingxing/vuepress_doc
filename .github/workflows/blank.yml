@@ -51,6 +51,8 @@ jobs:
           dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
           dst_token: ${{ secrets.GITEE_TOKEN }}
           account_type: user
+          force_update: true
+          debug: true
 
       # 4、部署到 Gitee Pages
       - name: Build Gitee Pages
