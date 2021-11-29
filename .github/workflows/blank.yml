@@ -33,16 +33,24 @@ jobs:
           #注意这里的 public 是仓库根目录下的 public，也就是 npm run build 生成静态资源的路径，比如有的人是 `docs/.vuepress/dist`
 
       # 3、同步到 gitee 的仓库
-      - name: Sync to Gitee
-        uses: wearerequired/git-mirror-action@master
-        env:
-          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
-          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+#      - name: Sync to Gitee
+#        uses: wearerequired/git-mirror-action@master
+#        env:
+#          # 注意在 Settings->Secrets 配置 GITEE_RSA_PRIVATE_KEY
+#          SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+#        with:
+#          # 注意替换为你的 GitHub 源仓库地址
+#          source-repo: git@github.com:linbingxing/linbingxing.github.io.git
+#          # 注意替换为你的 Gitee 目标仓库地址
+#          destination-repo: git@gitee.com:linbingxing/linbingxing.git
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
         with:
-          # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:linbingxing/linbingxing.github.io.git
-          # 注意替换为你的 Gitee 目标仓库地址
-          destination-repo: git@gitee.com:linbingxing/linbingxing.git
+          src: github/linbingxing.github.io
+          dst: gitee/linbingxing
+          dst_key: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
+          dst_token: ${{ secrets.GITEE_TOKEN }}
+          account_type: user
 
       # 4、部署到 Gitee Pages
       - name: Build Gitee Pages
