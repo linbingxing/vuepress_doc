@@ -11,9 +11,9 @@ module.exports = [
           {text:'Java 基础知识点',link:'/pages/ae2dff/'}
         ]
       },
-      { text: 'Java 集合框架', link: '/pages/0a83b083bdf257cb/' },
-      { text: 'Java 多线程并发', link: '/pages/0a83b083bdf257cb/' },
-      { text: 'Java IO/NIO/AIO', link: '/pages/0a83b083bdf257cb/' },
+      { text: 'Java 集合框架', link: '/pages/ed21e7/' },
+      { text: 'Java 多线程并发', link: '/pages/c8f209/' },
+      { text: 'Java IO/NIO/AIO', link: '/pages/03f728/' },
       { text: 'JVM 总结', link: '/pages/0a83b083bdf257cb/' },
     ],
   },
