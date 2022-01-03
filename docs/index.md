@@ -1,7 +1,7 @@
 ---
 home: true
 # heroImage: /img/bg1.jpg
-heroText: 一码编程
+heroText: 一碟花生米
 tagline: 努力做有价值的技术文章。
 # actionText: 立刻进入 →
 # actionLink: /web/
