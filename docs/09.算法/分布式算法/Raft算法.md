@@ -4,25 +4,11 @@
 
 ## 1 什么是Raft算法
 
-Paxos 是论证了一致性协议的可行性，但是论证的过程据说晦涩难懂，缺少必要的实现细节，而且
-
-工程实现难度比较高, 广为人知实现只有 zk 的实现 zab 协议。
-
- Paxos协议的出现为分布式强一致性提供了很好的理论基础，但是Paxos协议理解起来较为困难，
-
-实现比较复杂。
-
-然后斯坦福大学RamCloud项目中提出了易实现，易理解的分布式一致性复制协议 Raft。Java，
-
-C++，Go 等都有其对应的实现之后出现的Raft相对要简洁很多。
+Paxos 是论证了一致性协议的可行性，但是论证的过程据说晦涩难懂，缺少必要的实现细节，而且工程实现难度比较高, 广为人知实现只有 zk 的实现 zab 协议。Paxos协议的出现为分布式强一致性提供了很好的理论基础，但是Paxos协议理解起来较为困难，实现比较复杂。然后斯坦福大学RamCloud项目中提出了易实现，易理解的分布式一致性复制协议 Raft。Java，C++，Go 等都有其对应的实现之后出现的Raft相对要简洁很多。
 
 **引入主节点，通过竞选确定主节点。节点类型：Follower(从节点）、Candidate(候选节点)和Leader(主节点)**
 
- Leader 会周期性的发送心跳包给 Follower。每个 Follower 都设置了一个随机的竞选超时时间，一
-
-般为 150ms~300ms，如果在这个时间内没有收到 Leader 的心跳包，就会变成 Candidate，进入竞选
-
-阶段, 通过竞选阶段的投票多的人成为Leader。
+ Leader 会周期性的发送心跳包给 Follower。每个 Follower 都设置了一个随机的竞选超时时间，一般为 150ms~300ms，如果在这个时间内没有收到 Leader 的心跳包，就会变成 Candidate，进入竞选阶段, 通过竞选阶段的投票多的人成为Leader。
 
 ![Raft-1](https://gitee.com/linbingxing/image/raw/master/distributed/Raft-1.png)
 
