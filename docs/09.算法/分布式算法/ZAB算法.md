@@ -1,6 +1,6 @@
 #  ZAB协议详解
 
-## 什么是Zab协议？
+## 1 什么是Zab协议？
 
 Zab协议 的全称是 Zookeeper Atomic Broadcast （Zookeeper原子广播）。
 
@@ -17,4 +17,10 @@ Zab借鉴了Paxos算法，但又不像Paxos那样，是一种通用的分布式�
 Zookeeper 客户端会随机的链接到 zookeeper 集群中的一个节点，如果是读请求，就直接从当前节点中读取数据；
 
 如果是写请求，那么节点就会向 Leader 提交事务，Leader 接收到事务提交，会广播该事务，只要超过半数节点写入成功，该事务就会被提交。
+
+
+
+
+
+[ZAB-一致性算法](https://houbb.github.io/2018/10/30/zab)
 
