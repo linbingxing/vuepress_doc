@@ -49,3 +49,12 @@ Leslie Lamport提出的 Paxos 算法包含 2 个部分 ：
 Paxos的版本有: **Basic Paxos , Multi Paxos, Fast-Paxos**, 具体落地有Raft 和zk的ZAB协议。
 
 ![Paxos-5](https://gitee.com/linbingxing/image/raw/master/distributed/Paxos-5.png)
+
+## 3 Basic Paxos相关概念
+
+角色介绍
+
+Basic Paxos算法在Leslie Lamport论文中的内容是比较精简的，核心是三种基本角色：Proposer、Acceptor及Learner：
+
+![Paxos-6](https://gitee.com/linbingxing/image/raw/master/distributed/Paxos-6.png)
+
