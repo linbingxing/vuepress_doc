@@ -1,3 +1,13 @@
+---
+title: SQL语言
+date: 2022-02-25 21:27:40
+permalink: /pages/f6489d/
+categories:
+  - 数据库
+  - Sql
+tags:
+  - 
+---
 #  SQL语言
 
 ## SQL语言的4个定义

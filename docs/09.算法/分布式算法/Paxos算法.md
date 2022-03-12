@@ -1,3 +1,13 @@
+---
+title: Paxos算法
+date: 2022-02-25 21:27:40
+permalink: /pages/3af2ca/
+categories:
+  - 算法
+  - 分布式算法
+tags:
+  - 
+---
 #  Paxos算法
 
 ## 1 什么是Paxos

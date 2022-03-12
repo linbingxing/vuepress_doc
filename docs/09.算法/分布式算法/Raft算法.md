@@ -1,3 +1,13 @@
+---
+title: Raft算法
+date: 2022-02-25 21:27:40
+permalink: /pages/bcc62a/
+categories:
+  - 算法
+  - 分布式算法
+tags:
+  - 
+---
 #  Raft算法
 
 > Raft算法讲解最生动的教程：[Raft: Understandable Distributed Consensus](http://thesecretlivesofdata.com/raft/)，也便于理解接下来要讲的内容。
