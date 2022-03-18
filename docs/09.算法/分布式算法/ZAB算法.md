@@ -1,3 +1,13 @@
+---
+title: ZAB算法
+date: 2022-02-25 21:27:40
+permalink: /pages/3c26af/
+categories:
+  - 算法
+  - 分布式算法
+tags:
+  - 
+---
 #  Zab协议详解
 
 ## 1 什么是Zab协议？

@@ -1,3 +1,13 @@
+---
+title: 0分布式认证和授权方案
+date: 2022-02-25 21:27:40
+permalink: /pages/43f9c7/
+categories:
+  - 框架
+  - Spring
+tags:
+  - 
+---
 # Spring Security OAuth 2.0 认证和授权方案
 
 ## 1 OAuth 2.0
